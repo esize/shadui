@@ -1,3 +1,4 @@
+"use server";
 import { type LucideProps, icons } from "lucide-react";
 
 type IconComponentName = keyof typeof icons;
@@ -12,7 +13,7 @@ function isValidIconComponent(
   return componentName in icons;
 }
 
-export function DynamicIcon({ name, ...props }: IconProps) {
+export default async function DynamicIcon({ name, ...props }: IconProps) {
   const kebabToPascal = (str: string) =>
     str
       .split("-")

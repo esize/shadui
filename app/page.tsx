@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <main className="min-h-screen max-w-3xl mx-auto p-4 md:p-8">
       <h1 className="text-2xl md:text-3xl font-bold mb-4">
-        Awesome Component Registry
+        Evan's Custom Component Registry
       </h1>
       <p className="text-muted-foreground text-sm">
         Below is a list of all the components available in the registry. Click
         on a component to copy the command to install it.
       </p>
       <Tabs defaultValue="default" className="w-full mt-8">
-        <div className="flex items-center gap-4 items-center mb-4">
+        <div className="flex gap-4 items-center mb-4">
           <p className="text-muted-foreground text-sm">Styles:</p>
           <TabsList>
             {Object.keys(Index).map((style) => (
@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                     <CopyCommandButton style={style} component={component} />
                   </li>
-                ),
+                )
               )}
             </ul>
           </TabsContent>
