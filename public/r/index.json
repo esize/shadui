@@ -41,5 +41,18 @@
         }
       }
     }
+  },
+  {
+    "name": "icon",
+    "type": "registry:ui",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "files": [
+      {
+        "path": "ui/icon.tsx",
+        "type": "registry:ui"
+      }
+    ]
   }
 ]
