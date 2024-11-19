@@ -2,10 +2,57 @@
   {
     "name": "icon",
     "type": "registry:ui",
+    "description": "Dynamic icon component",
     "dependencies": [
       "lucide-react"
     ],
     "files": [
+      {
+        "path": "ui/icon.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "color-selector",
+    "type": "registry:ui",
+    "description": "Color selector component",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "utils",
+      "button",
+      "popover",
+      "label",
+      "tabs",
+      "tooltip"
+    ],
+    "files": [
+      {
+        "path": "ui/color-selector.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "icon-selector",
+    "type": "registry:ui",
+    "description": "Icon selector component",
+    "dependencies": [
+      "lucide-react",
+      "@tanstack/react-virtual"
+    ],
+    "registryDependencies": [
+      "button",
+      "input",
+      "popover"
+    ],
+    "files": [
+      {
+        "path": "ui/icon-selector.tsx",
+        "type": "registry:ui"
+      },
       {
         "path": "ui/icon.tsx",
         "type": "registry:ui"

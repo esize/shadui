@@ -1,6 +1,7 @@
 {
   "name": "icon",
   "type": "registry:ui",
+  "description": "Dynamic icon component",
   "dependencies": [
     "lucide-react"
   ],
